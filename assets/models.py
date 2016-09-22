@@ -5,6 +5,11 @@ from assets.cus_auth import UserProfile
 
 
 class Asset(models.Model):
+    """
+    :param name:
+    :param sn:
+
+    """
     asset_type_choices = (
         ('server', u'服务器'),
         ('switch', u'交换机'),

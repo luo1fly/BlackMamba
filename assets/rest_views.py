@@ -32,7 +32,7 @@ class ServerViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.ServerSerializer
 
 
-@api_view(['GET', ])
+@api_view(['GET', 'POST'])
 @permission_classes((permissions.AllowAny,))
 def asset_list(request):
     if request.method == 'GET':
